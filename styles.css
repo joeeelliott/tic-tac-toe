@@ -1,0 +1,95 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: lightgray;
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(3, 150px);
+  grid-template-columns: repeat(3, 150px);
+  border-radius: 20px; 
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 10px 10px 15px black;
+}
+
+main > div {
+  border: 1px solid black;
+  font-size: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number0, .number1, .number2 {
+  border-top: none;
+}
+
+.number3, .number4, .number5 {
+  border-top: none;
+}
+
+.number6, .number7, .number8 {
+  border-top: none;
+}
+
+.number0, .number3, .number6 {
+  border-right: none;
+  border-left: none;
+}
+
+.number2, .number5, .number8 {
+  border-right: none;
+  border-left: none;
+}
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0, 0.5);
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+.modal-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(0, 0, 0, 0.7);
+  padding: 30px 50px;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 20px;
+}
+
+.modal button {
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  width: 200px;
+  border-radius: 20px;
+  margin: 20px 0px 15px 0px;
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.modal button:hover {
+  background-color: white;
+}
